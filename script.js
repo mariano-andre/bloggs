@@ -167,11 +167,10 @@ function mostrarBlog(usuario){
         elementoUsuario.style.borderColor = 'lightgrey'
     }
     elementoUsuario.style.background = usuario.cor;
-    titulo.after(elementoUsuario);
-
     elementoUsuario.addEventListener('click', () => {
         exibirPerfil(usuario);
     });
+    titulo.after(elementoUsuario);
 }
 
 // perfil
@@ -189,7 +188,7 @@ function apagarUsuarioDaTela(){
 }
 
 function exibirPerfil(usuario){
-    if(divPerfil.style.display == 'none'){
+    if(divPerfil.style.display == 'none' || divPerfil.style.display == ''){
         divPerfil.style.display = 'flex';
 
         const outInformacoes = document.querySelectorAll('.outInformacoes');
