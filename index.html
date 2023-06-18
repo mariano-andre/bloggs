@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloggs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div id="titulo">
+            <h1 id="h1Titulo">Bloggs</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#cabecalho">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box" id="divCadastrar">
+        <h2>Criar Conta</h2>
+        <div>
+            <div>
+                <label for="inLogin">Login:</label>
+                <input type="text" placeholder="ex: adre123" id="inLogin">
+            </div>
+            <div>
+                <label for="inCriarSenha">Senha:</label>
+                <input type="password" placeholder="ex: Boi89/" id="inCriarSenha">
+            </div>
+            <input type="button" value="Cadastrar" id="btCadastrar">
+            <div class="linha"></div>
+            <div class="link-div">
+                <a href="#" id="lkLogon">Já possui uma conta?</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" id="divEntrar">
+        <h2>Entrar na Conta</h2>
+        <div>
+            <div>
+                <label for="inLogon">Login:</label>
+                <input type="text" placeholder="seu login" id="inLogon">
+            </div>
+            <div>
+                <label for="inSenha">Senha:</label>
+                <input type="password" placeholder="sua senha" id="inSenha">
+            </div>
+            <input type="button" value="Acessar" id="btAcessar">
+            <div class="linha"></div>
+            <div class="link-div">
+                <a href="#" id="lkLogin">Criar uma conta</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" id="divBlog">
+        <h1>Blogs</h1>
+        <div class="linha"></div>
+        <a href="#" id="lkCadastro">Voltar para o cadastro</a>
+    </div>
+
+    <div class="box" id="divPerfil">
+        <h2>Seu Perfil</h2>
+        <table>
+            <tr>
+                <td id="outLogin"><p>Seu login:</p></td>
+            </tr>
+            <tr>
+                <td id="outAcessos"><p>Acessos:</p></td>
+            </tr>
+            <tr>
+                <td><p id="opcoesCor">Alterar cor do perfil:</td>
+                <td><input type="color" id="inNovaCor"></p></td>
+            </tr>
+        </table>
+        <input type="button" value="Aplicar!" id="btAplicarNovaCor">
+        
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
